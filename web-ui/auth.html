@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kitchen App | Sign In</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body data-page="auth">
+  <header>
+    <div class="container nav">
+      <div class="logo">Kitchen App</div>
+      <nav class="nav-links">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="recipes.html" data-nav="recipes">Recipes</a>
+        <a href="dashboard.html" data-nav="dashboard">Dashboard</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="index.html#pricing">Pricing</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-button" href="auth.html">Sign in</a>
+        <a class="button primary" href="auth.html">Get started</a>
+      </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" data-nav-toggle>Menu</button>
+    </div>
+    <div class="container mobile-menu" data-mobile-menu>
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="about.html">About</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="auth.html">Sign in</a>
+    </div>
+  </header>
+  <div class="mobile-overlay" data-mobile-overlay></div>
+
+  <main>
+    <section class="container page-header">
+      <h1 class="section-title">Welcome back to Kitchen App</h1>
+      <p>Sign in to manage recipes, meal plans, and live kitchen operations.</p>
+    </section>
+
+    <section class="container">
+      <div class="auth-card">
+        <h2>Sign in</h2>
+        <p>Use your account email and password to continue.</p>
+        <form class="auth-row" data-auth-form data-auth-mode="login">
+          <input class="input" type="email" name="email" placeholder="Email address" />
+          <input class="input" type="password" name="password" placeholder="Password" />
+          <button class="button primary" type="submit">Sign in</button>
+        </form>
+        <p class="auth-helper">Don't have an account? Create one below.</p>
+        <div style="height: 18px;"></div>
+        <h2>Create account</h2>
+        <p>Start a free trial for your household or team.</p>
+        <form class="auth-row" data-auth-form data-auth-mode="signup">
+          <input class="input" type="text" name="name" placeholder="Full name" />
+          <input class="input" type="email" name="email" placeholder="Work email" />
+          <input class="input" type="password" name="password" placeholder="Create a password" />
+          <button class="button secondary" type="submit">Create account</button>
+        </form>
+        <p class="auth-helper" data-auth-status></p>
+        <p class="auth-helper">We will never share your email with third parties.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div>
+      <div class="logo">Kitchen App</div>
+      <div>Professional cooking and planning suite.</div>
+    </div>
+    <div>
+      <div>Support: hello@kitchenapp.com</div>
+      <div>API health: <code>http://localhost:3000/health</code></div>
+    </div>
+  </footer>
+</body>
+</html>

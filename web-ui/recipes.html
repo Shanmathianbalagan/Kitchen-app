@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kitchen App | Recipes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body data-page="recipes">
+  <header>
+    <div class="container nav">
+      <div class="logo">Kitchen App</div>
+      <nav class="nav-links">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="recipes.html" data-nav="recipes">Recipes</a>
+        <a href="dashboard.html" data-nav="dashboard">Dashboard</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="index.html#pricing">Pricing</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-button" href="auth.html">Sign in</a>
+        <a class="button primary" href="auth.html">Get started</a>
+      </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" data-nav-toggle>Menu</button>
+    </div>
+    <div class="container mobile-menu" data-mobile-menu>
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="about.html">About</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="auth.html">Sign in</a>
+    </div>
+  </header>
+  <div class="mobile-overlay" data-mobile-overlay></div>
+
+  <main>
+    <section class="container page-header">
+      <h1 class="section-title">Recipes built for real kitchens</h1>
+      <p>Browse curated collections, save favorites, and send any recipe to your weekly plan in one click.</p>
+    </section>
+
+    <section class="container split">
+      <div>
+        <h2 class="section-title">Filter by goal</h2>
+        <p class="section-lead">Keep your kitchen organized with focus collections and nutrition-balanced plans.</p>
+        <div class="pill-row">
+          <span class="pill">High protein</span>
+          <span class="pill">30-minute meals</span>
+          <span class="pill">Seasonal produce</span>
+          <span class="pill">Family friendly</span>
+          <span class="pill">Low waste</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/recipe-2.svg" alt="Recipe collection preview" />
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="section-title">Chef curated picks</h2>
+      <p class="section-lead">Each recipe includes prep steps, ingredient swaps, and nutrition estimates.</p>
+      <p data-recipes-status class="section-lead"></p>
+      <div class="grid" data-recipes-grid></div>
+    </section>
+
+    <section class="container">
+      <div class="highlight">
+        <div>
+          <h2 class="section-title">Build a weekly plan in minutes</h2>
+          <p class="section-lead">Drag recipes into your calendar, then auto-generate a grocery list by aisle.</p>
+        </div>
+        <div>
+          <a class="button primary" href="dashboard.html">Open dashboard</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div>
+      <div class="logo">Kitchen App</div>
+      <div>Professional cooking and planning suite.</div>
+    </div>
+    <div>
+      <div>Support: hello@kitchenapp.com</div>
+      <div>API health: <code>http://localhost:3000/health</code></div>
+    </div>
+  </footer>
+</body>
+</html>

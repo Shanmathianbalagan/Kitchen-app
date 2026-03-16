@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kitchen App | Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body data-page="dashboard">
+  <header>
+    <div class="container nav">
+      <div class="logo">Kitchen App</div>
+      <nav class="nav-links">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="recipes.html" data-nav="recipes">Recipes</a>
+        <a href="dashboard.html" data-nav="dashboard">Dashboard</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="index.html#pricing">Pricing</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-button" href="auth.html">Sign in</a>
+        <a class="button primary" href="auth.html">Get started</a>
+      </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" data-nav-toggle>Menu</button>
+    </div>
+    <div class="container mobile-menu" data-mobile-menu>
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="about.html">About</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="auth.html">Sign in</a>
+    </div>
+  </header>
+  <div class="mobile-overlay" data-mobile-overlay></div>
+
+  <main>
+    <section class="container page-header">
+      <h1 class="section-title">Kitchen operations dashboard</h1>
+      <p>Track orders, timing, and prep metrics with a clean, professional overview.</p>
+    </section>
+
+    <section class="container split">
+      <div>
+        <div class="stats-row">
+          <div class="stat-card">
+            <span>86%</span>
+            Pantry readiness
+          </div>
+          <div class="stat-card">
+            <span>4</span>
+            Meals scheduled today
+          </div>
+          <div class="stat-card">
+            <span>18 min</span>
+            Average prep time
+          </div>
+          <div class="stat-card">
+            <span>12</span>
+            Active recipes
+          </div>
+        </div>
+        <div style="margin-top: 24px;" class="list">
+          <div>Auto-sort tasks by time and station.</div>
+          <div>Monitor order status transitions live.</div>
+          <div>Keep the whole kitchen in sync.</div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/dashboard.svg" alt="Dashboard preview" />
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="section-title">Live kitchen orders</h2>
+      <p class="section-lead">Connected to the Kitchen API at <code>http://localhost:3000</code>.</p>
+      <div class="orders-grid">
+        <div class="card">
+          <h4>Create a new order</h4>
+          <form data-order-form>
+            <input class="input" type="text" placeholder="Dish name, for example: Truffle pasta" data-order-input />
+            <button class="button primary" type="submit">Send to kitchen</button>
+          </form>
+          <p data-order-create-status class="section-lead"></p>
+        </div>
+        <div class="card">
+          <h4>Active orders</h4>
+          <p data-orders-status class="section-lead"></p>
+          <div data-orders-list class="orders-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="highlight">
+        <div>
+          <h2 class="section-title">Share the dashboard with your team</h2>
+          <p class="section-lead">Invite cooks, nutritionists, or delivery staff to keep operations aligned.</p>
+        </div>
+        <div>
+          <a class="button primary" href="about.html">Learn about Kitchen App</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div>
+      <div class="logo">Kitchen App</div>
+      <div>Professional cooking and planning suite.</div>
+    </div>
+    <div>
+      <div>Support: hello@kitchenapp.com</div>
+      <div>API health: <code>http://localhost:3000/health</code></div>
+    </div>
+  </footer>
+</body>
+</html>

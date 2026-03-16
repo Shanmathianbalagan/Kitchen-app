@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kitchen App | Recipe</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body data-page="recipe-detail">
+  <header>
+    <div class="container nav">
+      <div class="logo">Kitchen App</div>
+      <nav class="nav-links">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="recipes.html" data-nav="recipes">Recipes</a>
+        <a href="dashboard.html" data-nav="dashboard">Dashboard</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="index.html#pricing">Pricing</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-button" href="auth.html">Sign in</a>
+        <a class="button primary" href="auth.html">Get started</a>
+      </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" data-nav-toggle>Menu</button>
+    </div>
+    <div class="container mobile-menu" data-mobile-menu>
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="about.html">About</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="auth.html">Sign in</a>
+    </div>
+  </header>
+  <div class="mobile-overlay" data-mobile-overlay></div>
+
+  <main>
+    <section class="container page-header">
+      <h1 class="section-title">Recipe details</h1>
+      <p class="section-lead">See ingredient highlights, nutrition, and how it fits your plan.</p>
+      <p data-recipe-status class="section-lead"></p>
+    </section>
+
+    <section class="container" data-recipe-detail></section>
+
+    <section class="container">
+      <div class="highlight">
+        <div>
+          <h2 class="section-title">Plan this recipe for the week</h2>
+          <p class="section-lead">Add to your plan and sync with grocery lists instantly.</p>
+        </div>
+        <div>
+          <a class="button primary" href="dashboard.html">Open dashboard</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div>
+      <div class="logo">Kitchen App</div>
+      <div>Professional cooking and planning suite.</div>
+    </div>
+    <div>
+      <div>Support: hello@kitchenapp.com</div>
+      <div>API health: <code>http://localhost:3000/health</code></div>
+    </div>
+  </footer>
+</body>
+</html>

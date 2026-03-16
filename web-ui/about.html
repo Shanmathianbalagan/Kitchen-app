@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kitchen App | About</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body data-page="about">
+  <header>
+    <div class="container nav">
+      <div class="logo">Kitchen App</div>
+      <nav class="nav-links">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="recipes.html" data-nav="recipes">Recipes</a>
+        <a href="dashboard.html" data-nav="dashboard">Dashboard</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="index.html#pricing">Pricing</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-button" href="auth.html">Sign in</a>
+        <a class="button primary" href="auth.html">Get started</a>
+      </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" data-nav-toggle>Menu</button>
+    </div>
+    <div class="container mobile-menu" data-mobile-menu>
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="about.html">About</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="auth.html">Sign in</a>
+    </div>
+  </header>
+  <div class="mobile-overlay" data-mobile-overlay></div>
+
+  <main>
+    <section class="container page-header">
+      <h1 class="section-title">Built for kitchens that run on trust</h1>
+      <p>Kitchen App combines meal planning, pantry intelligence, and live operations into one professional workspace.</p>
+    </section>
+
+    <section class="container split">
+      <div>
+        <h2 class="section-title">Our mission</h2>
+        <p class="section-lead">We help households and small teams cook smarter, waste less, and keep everyone aligned. Every feature is designed to reduce friction between planning and cooking.</p>
+        <div class="list">
+          <div>Reduce waste with pantry tracking and smart expiry alerts.</div>
+          <div>Deliver healthy meals with nutrition-balanced plans.</div>
+          <div>Make cooking collaborative with shared lists and roles.</div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/hero.svg" alt="Kitchen team workflow" />
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="section-title">What makes us different</h2>
+      <div class="grid">
+        <div class="card">
+          <h4>Workflow first</h4>
+          <p>From planning to prep, every step is supported by a clear, professional flow.</p>
+        </div>
+        <div class="card">
+          <h4>Unified kitchen data</h4>
+          <p>Recipes, pantry, and orders live in a single source of truth.</p>
+        </div>
+        <div class="card">
+          <h4>Built for teams</h4>
+          <p>Role-based visibility and shared task lists keep kitchens aligned.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="highlight">
+        <div>
+          <h2 class="section-title">Ready to see it live?</h2>
+          <p class="section-lead">Open the dashboard and connect to the Kitchen API to experience live orders.</p>
+        </div>
+        <div>
+          <a class="button primary" href="dashboard.html">Open dashboard</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div>
+      <div class="logo">Kitchen App</div>
+      <div>Professional cooking and planning suite.</div>
+    </div>
+    <div>
+      <div>Support: hello@kitchenapp.com</div>
+      <div>API health: <code>http://localhost:3000/health</code></div>
+    </div>
+  </footer>
+</body>
+</html>
